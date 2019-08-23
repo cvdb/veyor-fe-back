@@ -33,7 +33,7 @@ function getFeed(tags, page) {
 function mapToUrl(body) {
   body.photos.photo = body.photos.photo
     .map(p => {
-      return `https://farm${p.farm}.staticflickr.com/${p.server}/${p.id}_${p.secret}_z.jpg`;  // NOTE: default to size: z 640, 640 on longest side
+      return `https://farm${p.farm}.staticflickr.com/${p.server}/${p.id}_${p.secret}_q.jpg`;  // NOTE: default to size: q
     }); 
   return body;
 }
